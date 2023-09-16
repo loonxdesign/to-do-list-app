@@ -1,8 +1,8 @@
-
 function newItem() {
 
     //jQuery
     //1. Adding a new item to the list of items:
+
     let li = $('<li></li>');
     let inputValue = $('#input').val();
     li.append(inputValue);
@@ -18,7 +18,7 @@ function newItem() {
     function crossOut() {
         li.toggleClass('strike');
     }
-    
+
     li.on('dblclick', crossOut);
 
     //3(i). Adding the delete button "X": 
@@ -32,7 +32,7 @@ function newItem() {
     function deleteListItem() {
         li.addClass('delete')
     }
-    
+
     // 4. Reordering the items: 
     $('#list').sortable();
 
