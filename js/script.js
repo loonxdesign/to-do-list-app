@@ -37,3 +37,19 @@ function newItem() {
     $('#list').sortable();
 
 }
+
+let input = $('#input');
+
+input.on('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === 'Return') {
+        newItem();
+    } 
+});
+
+function focusInput() {
+    if (input === ''){
+        input.focus();
+    }
+};
+
+console.log(e.key);
